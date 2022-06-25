@@ -6,6 +6,8 @@
 
 **期刊**：NIPS
 
+code：https://github.com/zlove-summer/AlexNet-pytorch
+
 ## 1 摘要
 
 文章训练了一个深度神经网络模型用于ImageNet图像分类竞赛，取得了大赛的冠军并且效果大大好于第二名。模型包括了5个卷积层和3个全连接层，使用了GPU进行加快训练。文章主要提出了Relu激活函数、DropOut正则化这些创新。
