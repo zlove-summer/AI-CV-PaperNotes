@@ -26,7 +26,7 @@
 
 以下图是AlexNet模型的总体设计。
 
-<img src="D:\pic_for_md\image-20211217202457023.png" alt="image-20211217202457023"  />
+![image-20211217202457023](https://user-images.githubusercontent.com/81303574/175772536-9a3d6288-f524-4ec3-a5e0-7f45012eae30.png)
 
 - 模型的输入是224\*224\*3（图中有误），输出是经过softmax后的1000维的向量，代表1000个类别。
 - 模型包括5个卷积层和3个全连接层，采用重叠池化等操作。其他卷积核大小和步长图中均有体现。
@@ -37,7 +37,9 @@
 
 ​		以前的神经网络模型，一般采用tanh或者sigmiod激活函数。文中采用Relu激活函数，并且后来relu激活函数也作为了深度学习主要的激活函数。Relu激活函数的形式是：$f(x)=max(0,x)$。这种方式，使得更大的神经刺激能更好地向后层传递，在深层网络中，**能缓解梯度消失的情况，并且由于梯度求解非常容易等优点，被广泛使用**。这种方式也使得训练速度大大加快，模型更快收敛。
 
-<img src="D:\pic_for_md\image-20220417211021908.png" alt="image-20220417211021908" style="zoom: 67%;" />
+
+![image-20220417211021908](https://user-images.githubusercontent.com/81303574/175772554-6f0eee26-c72e-4256-a33a-f961b6a3932c.png)
+
 
 #### 4.2.2 Dropout防止过拟合
 
@@ -55,7 +57,7 @@ Dropout也可以称为一种正则化手段。
 
 以下是ImageNet图像数据集竞赛上，ALexNet模型的表现。从图中可以看出top1和top5错误率均大大降低，效果非常好（其他两种模型均是传统手工提取特征的模型）。
 
-<img src="D:\pic_for_md\image-20211217204907388.png" alt="image-20211217204907388" style="zoom:50%;" />
+![image-20211217204907388](https://user-images.githubusercontent.com/81303574/175772764-a985500b-3cd3-4557-9486-3a0d80e1bfd4.png)
 
 ## 5 结论
 
