@@ -5,4 +5,5 @@
 
 ## 基础模型
 - AlexNet
-    [AlexNet论文笔记：深度学习大放异彩开端之作](basic_model/AlexNet论文笔记)
+
+    [AlexNet论文笔记：深度学习大放异彩开端之作](basic_model/AlexNet论文笔记.md)
